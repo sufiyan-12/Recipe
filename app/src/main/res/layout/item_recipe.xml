@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="8dp"
+    android:layout_gravity="center">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/color_2"
+            android:layout_height="220dp"
+            android:id="@+id/idRLImage">
+        <ImageView
+            android:id="@+id/idIVItem"
+            android:scaleY="1.5"
+            android:scaleX="1.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+        </RelativeLayout>
+        <TextView
+                android:id="@+id/idTVRecipeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_1"
+                android:text="Recipe Name"
+                android:textSize="18sp"
+                android:layout_below="@+id/idRLImage"
+                android:padding="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_4"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_1"
+                android:layout_below="@+id/idTVRecipeName"
+                android:id="@+id/idTVDesc"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:textColor="@color/color_4"
+                android:textStyle="italic"
+                />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
